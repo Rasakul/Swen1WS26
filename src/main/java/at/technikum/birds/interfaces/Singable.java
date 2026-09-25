@@ -1,4 +1,4 @@
-package at.technikum;
+package at.technikum.birds.interfaces;
 
 public interface Singable {
 

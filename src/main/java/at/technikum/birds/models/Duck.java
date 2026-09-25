@@ -1,6 +1,8 @@
-package at.technikum;
+package at.technikum.birds.models;
 
-public class Duck extends Bird implements Singable{
+import at.technikum.birds.interfaces.Singable;
+
+public class Duck extends Bird implements Singable {
 
     private String name;
 

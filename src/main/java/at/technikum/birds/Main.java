@@ -1,7 +1,12 @@
-package at.technikum;
+package at.technikum.birds;
+
+import at.technikum.birds.interfaces.Flyable;
+import at.technikum.birds.models.Bird;
+import at.technikum.birds.models.Colibri;
+import at.technikum.birds.models.Duck;
+import at.technikum.birds.models.Goose;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {

@@ -1,4 +1,6 @@
-package at.technikum;
+package at.technikum.birds.models;
+
+import at.technikum.birds.interfaces.Flyable;
 
 public abstract class Bird implements Flyable {
 
