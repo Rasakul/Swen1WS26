@@ -3,6 +3,7 @@ package at.technikum.layer.persistence;
 import at.technikum.layer.domain.User;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class UserRepositoryImpl implements UserRepository {
@@ -36,5 +37,30 @@ public class UserRepositoryImpl implements UserRepository {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public User create(User user) {
+        return null;
+    }
+
+    @Override
+    public User get(String id) {
+        return null;
+    }
+
+    @Override
+    public List<User> getAll() {
+        return List.of();
+    }
+
+    @Override
+    public User update(User user) {
+        return null;
+    }
+
+    @Override
+    public boolean delete(User user) {
+        return false;
     }
 }

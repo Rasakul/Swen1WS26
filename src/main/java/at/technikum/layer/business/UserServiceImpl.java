@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-    public static UserService getInstance(UserRepository userRepository) {
+    public static UserService getInstance(UserRepository userRepository, AuthorizationService authorizationService) {
         if (instance == null) {
             instance = new UserServiceImpl(userRepository);
         }
@@ -36,6 +36,31 @@ public class UserServiceImpl implements UserService {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public User create(User user) {
+        return userRepository.create(user);
+    }
+
+    @Override
+    public User get(String id) {
+        return userRepository.get(id);
+    }
+
+    @Override
+    public List<User> getAll() {
+        return userRepository.getAll();
+    }
+
+    @Override
+    public User update(User user) {
+        return userRepository.update(user);
+    }
+
+    @Override
+    public boolean delete(User user) {
+        return false;
     }
 
 }
