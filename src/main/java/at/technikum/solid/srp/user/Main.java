@@ -6,7 +6,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        UserService registration = new UserService();
+
+        UserRepository userRepository = new UserRepository();
+        UserService registration = new UserService(userRepository);
+
         registration.register("alex", "alex@technikum.at", "Secret123");
         registration.register("al", "not-an-email", "weak");
         registration.register("alex", "alex@technikum.at", "Secret123");
